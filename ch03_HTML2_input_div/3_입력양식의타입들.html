@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <form action="#" method="GET">
+        아이디 : <input type="text" name="uid" id="uid" ><input type="button" value="중복확인"><br>
+        비밀번호 : <input type="password" name="upw" id="upw"><br>
+        전화번호 : <input type="tel" name="utel1" size="3" id="utel1"> -
+                   <input type="tel" name="utel2" size="3" id="utel2"> -
+                   <input type="tel" name="utel3" size="3" id="utel3"><br>
+        사  진 : <input type="file" name="ufilename" id="ufilename"><br>
+        성  별 : <input type="radio" name="gender" id="gender" value="male" checked="checked">남
+                 <input type="radio" name="gender" id="female">여 <br>
+        사용언어 : <input type="checkbox" name="lang" id="kor" value="kor" checked="checked">한국어
+                <input type="checkbox" name="lang" id="cn" value="china">중국어
+                <input type="checkbox" name="lang" id="cn" value="india">인도어 <br>
+        생  일 : <input type="date" name="birth" id="birth"><br>
+        자기소개 : <br>
+        <textarea name="intro" id="intro" cols="25" rows="5">소개합니다.</textarea><br>
+        국  적 : <select name="nation" id="nation">
+                    <option value="대한민국">대한민국</option>
+                    <option value="중국">중국</option>
+                    <option value="인도">인도</option>
+                </select><br>
+        좋아하는 음식 <select name="food" id="food" multiple="multiple" size="3">
+                        <option value="김치찌개">김치찌개</option>
+                        <option value="삼겹살">삼겹살</option>
+                        <option value="차돌박이">차돌박이</option>
+                        <option value="맹륜진사갈비">맹륜진사갈비</option>
+                      </select><br>
+        좋아하는 색상 : <input type="color" name="color" id="color"><br>
+        좋아하는 정도 0<input type="range" name="step" id="step" min="0" max="10">10 <br>
+        홈페이지 : <input type="url" name="homepy" id="homepy"><br>
+        이메일 : <input type="email" name="mail" id="mail"><br>
+        <input type="submit" value="입력">
+    </form>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        #wrap {
+            width: 700px;
+            margin: 0 auto;
+        }
+        #wrap #header {
+            font-size: 30px;
+            font-weight: bold;
+            text-align: center;
+            border-bottom: 1px solid gray;
+            padding: 20px;
+        }
+        #wrap #content a {
+            text-decoration: none;
+            color: black;
+        }
+        #wrap #content a::after{ /* 링크선택자 */
+            content: ' - ' attr(href);
+        }
+        #wrap #content ul li:not(.fa){ /* 부정선택자 (fa)외에 모든 li에 적용 */
+            background-color: yellow;
+        }
+        #wrap #content {
+            border-bottom: 1px solid gray;
+        }
+        #wrap #footer ul{
+            overflow: hidden;
+        }
+        #wrap #footer ul li {
+            list-style: none;
+            float: left;
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <div id="header">
+            Weekly connect website
+        </div>
+        <div id="content">
+            <ul>
+                <li class="fa"><a href="http://www.naver.com" target="_blank">네이버</a></li>
+                <li><a href="http://www.daum.net" target="_blank">다음</a></li>
+                <li class="fa"><a href="http://www.google.com" target="_blank">구글</a></li>
+                <li><a href="http://www.yahoo.com" target="_blank">야후</a></li>
+            </ul>
+        </div>
+        <div id="footer">
+            <ul>
+                <li><img src="./logo.png" alt="고용노동부 로고"></li>
+                <li><img src="./address.png" alt="주소"></li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

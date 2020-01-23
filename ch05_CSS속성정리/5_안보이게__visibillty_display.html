@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+    #visibillity div {
+        width: 100px;
+        height: 100px;
+        border: 3px solid red;
+    }
+    #display div {
+        width: 100px;
+        height: 100px;
+        border: 3px solid red;
+    }
+    #visibillity div:nth-child(2){
+        /* v2가 안보이지만 차지하는 공간은 남겨둔다. */
+        visibility: hidden;
+    }
+
+    #display div:nth-child(2){
+        /* 공간까지도 안보이게 만들어서 d1밑에 바로 d3가 붙는것처럼 보인다. */
+        display: none;
+    }
+</style>
+<body>
+    <div id="visibillity">
+        <div>v1</div>
+        <div>v2</div>
+        <div>v3</div>
+    </div>
+
+    <div id="display">
+        <div>d1</div>
+        <div>d2</div>
+        <div>d3</div>
+    </div>
+
+</body>
+</html>

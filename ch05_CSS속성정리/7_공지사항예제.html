@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0 auto;
+        }
+        #wrap {
+            width: 618px;
+            height: 205px;
+            background-color: lightgray;
+            margin: 0 auto;
+            padding: 5px 5px;
+        }
+        #notice1, #notice2, #notice3 {
+            width: 200px;
+            height: 200px;
+            border: 1px solid white;
+            background-color: white;
+            border-radius: 10%;
+            display: inline-block;
+            color: blue;
+        }
+        p {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 0 0 0 15px;
+        }
+        ul li {
+            list-style: none;
+        }
+        ul li a {
+            text-decoration: none;
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <div id="notice1">
+            <p>공지사항</p>
+            <ul>
+                <li><a href="#1">게시물_01</a></li>
+                <li><a href="#2">게시물_02</a></li>
+                <li><a href="#3">게시물_03</a></li>
+                <li><a href="#4">게시물_04</a></li>
+                <li><a href="#5">게시물_05</a></li>
+            </ul>
+        </div>
+        <!-- display: inline-block; 을 사용하면 div와 div사이에 whilte-space가 들어가기때문에 스페이스를 없애려면 div를 이어붙여준다.-->
+        <div id="notice2">
+            <p>공지사항</p>
+            <ul>
+                <li><a href="#1">게시물_01</a></li>
+                <li><a href="#2">게시물_02</a></li>
+                <li><a href="#3">게시물_03</a></li>
+                <li><a href="#4">게시물_04</a></li>
+                <li><a href="#5">게시물_05</a></li>
+            </ul>
+        </div>
+        <div id="notice3">
+            <p>공지사항</p>
+            <ul>
+                <li><a href="#1">게시물_01</a></li>
+                <li><a href="#2">게시물_02</a></li>
+                <li><a href="#3">게시물_03</a></li>
+                <li><a href="#4">게시물_04</a></li>
+                <li><a href="#5">게시물_05</a></li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

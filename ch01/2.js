@@ -1,0 +1,3 @@
+// 2.js
+name = prompt("³Ê ÀÌ¸§ÀÌ ¹¹´Ï?", "È«±æµ¿");
+document.write(name + "´Ô Welcome <br> ");

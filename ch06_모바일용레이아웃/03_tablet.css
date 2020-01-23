@@ -1,0 +1,131 @@
+/* 페이지 초기화 */
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    min-width: 900px;
+}
+a {
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+
+/* header */
+#header {
+    height: 100px;
+    line-height: 100px;
+    padding: 10px;
+    background-color: purple;
+    color: white;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+/* nav_gnb (ul 2개 하나는 좌측, 다른 하나는 우측) */
+#nav_gnb {
+    overflow: hidden;
+    background-color: darkgray;
+    height: 80px;
+    line-height: 80px;
+}
+#nav_gnb ul:first-child {
+    float: left;
+}
+#nav_gnb ul:last-child {
+    float: right;
+}
+#nav_gnb ul li {
+    float: left;
+}
+#nav_gnb ul li a{
+    display: block;
+    padding: 0 43px;
+    color: white;
+    border-right: 1px solid lightgreen;
+    font-weight: bold;
+}
+#nav_gnb ul:last-child li:first-child {
+    border-left: 1px solid lightgreen;
+}
+/* section */
+#section {
+    overflow: hidden;
+    background-color: #e1e262;
+}
+/* section의 내부 nav_lnb (float:left) -- 100px고정 */
+#section #nav_lnb {
+    float: left;
+    width: 100px;
+    /*
+    border: 1px solid red;
+    box-sizing: border-box;
+    */
+}
+#section #nav_lnb ul li a {
+    display: block;
+    padding: 10px 20px;
+    border: 1px dashed gray;
+    color: #585716;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+/* section의 content_wrap (float:left) -- divice\-width에 따라 다름*/
+#section #content_wrap {
+    float: left;
+    /*width: 800px;*/
+    width: 100%;
+    margin-right: -100px; /* 전체 100%에서 nav_lab만큼 빼주면 붙는다. */
+    /*
+    border: 1px solid blue;
+    box-sizing: border-box;
+    */
+    background-color: #fcffcf;
+}
+#section #content_wrap #content {
+    padding: 20px 120px 20px 20px;
+    
+}
+
+#content_wrap #content div {
+    margin: 10px 0;
+    overflow: hidden;
+}
+#content_wrap #content div:first-child img{
+    float: left;
+    margin: 10px 20px 10px 10px;
+}
+#content_wrap #content div:nth-child(2) img{
+    float: right;
+    margin: 10px 10px 10px 20px;
+}
+#content_wrap #content div:nth-child(3) img{
+    margin: 10px;
+}
+#content_wrap #content div:nth-child(4) img{
+    float: left;
+    margin: 10px;
+}
+#content_wrap #content div:nth-child(4) img:nth-child(3){
+    margin-right: 20px;
+}
+
+/* footer */
+#footer {
+    background-color: lightgray;
+    height: 100px;
+    text-align: center;
+}
+
+#footer p:first-child{
+    font-weight: bold;
+    font-size: 1.5em;
+    padding-top: 10px;
+}
+
+#footer p:last-child{
+    margin: 20px 0 5px;
+    font-weight: bold;
+}

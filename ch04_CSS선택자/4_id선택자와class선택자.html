@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        div{
+            border: 1px solid gray;
+        }
+        /*div#header 또는 #header로 선언*/
+        #header{
+            width: 600px;
+            margin: 0 auto;
+            background-color: lightyellow;
+            text-align: center;
+        }
+        #wrap{
+            width: 600px;
+            margin: 0 auto;
+            background-color: aqua;
+            overflow: hidden;
+        }
+        #content {
+            width: 350px; /* #content가 필요한 영역 = width(350)+border(2) = 352px */
+            float: left;
+            text-align: center;
+            height: 250px;
+        }
+        #banner {
+            width: 246px; /*bannere가 필요한 영역 = width(246)+2 = 248px */
+            float: left;
+            text-align: center;
+            height: 250px;
+        }
+        img {
+            width: 200px;
+        }
+        .menu1 {
+            font-size: 1.3em; /*원래 크기의 1.3배 키우기*/
+        }
+        .menu2, .menu4 {
+            font-weight: bold;
+        }
+        #footer {
+            width: 600px;
+            margin: 0 auto;
+            background-color: lightyellow;
+            text-align: center;
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+    <div id="header">
+        <h1>HEADER</h1>
+    </div>
+    <div id="wrap">
+        <div id="content">
+            <h2>content</h2>
+            <ul>
+                <li class="menu1">menu1</li>
+                <li class="menu2">menu2</li>
+                <li class="menu1">menu3</li>
+                <li class="menu4">menu4</li>
+                <li class="menu1">menu5</li>
+            </ul>
+        </div>
+        <div id="banner">
+            <h2>BANNER</h2>
+            <a href="http://www.naver.com" target="_blank">
+            <img src="https://cdn.pixabay.com/photo/2015/02/09/20/03/koala-630117_960_720.jpg" alt="코알라" >
+            </a>
+        </div>
+    </div>
+    <div id="footer">
+        <h1>FOOTER</h1>
+    </div>
+</body>
+</html>

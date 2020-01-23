@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    넘어갈지 말지 <input type="text" name="test"><br> <!-- 폼태그 밖에 있는 값은 전송되지 않는다. -->
+    <form action="#" method="GET">
+        <!-- pattern : 패턴 형식 지정, placeholder : 도움말형식, title : 커서가 위치할때 뜨는 타이틀-->
+        전화 <input type="tel" name="tel" id="tel" pattern="\d[0-9]{2,3}-[0-9]{3,4}-[0-9]{4}" 
+                    placeholder="000-0000-0000" title="전화번호를 입력해주세요." autofocus="autofocus"><br>
+        카드 <input type="text" name="cardno" id="cardno" pattern="[0-9]{4}-[0-9]{4}-[0-9]{4}-[0-9]{4}" 
+                    placeholder="xxxx-xxxx-xxxx-xxxx"><br>
+        나이 <input type="number" name="age" id="age" min="1" max="120"><br>
+        업무 <input type="text" name="job" id="job"><br>
+        업무2 <select name="job2" id="job2">
+            <option value="분석">분석</option>
+            <option value="설계">설계</option>
+            <option value="구현">구현</option>
+            <option value="테스트">테스트</option>
+            <option value="유지보수">유지보수</option>
+        </select><br>
+        업무3 <input type="text" name="jobd" id="jobd" list="jobdata">
+                <datalist id="jobdata">
+                    <option value="분석">분석</option>
+                    <option value="설계">설계</option>
+                    <option value="구현">구현</option>
+                    <option value="테스트">테스트</option>
+                    <option value="유지보수">유지보수</option>
+                </datalist><br>
+        <input type="submit" value="전송">
+    </form>
+</body>
+</html>

@@ -1,0 +1,219 @@
+/************************* 전체속성 지정 *************************/
+*{
+    margin: 0;
+    padding: 0;
+}
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+
+/************************* header의 gnb *************************/
+.gnb {
+    width: 100%;
+    background-color: #222222;
+}
+.gnb ul {
+    width: 1000px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+.gnb ul li {
+    width: 100px;
+    float: left;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+}
+.gnb a {
+    color: white;
+    display: block;
+}
+
+/************************* header의 logo *************************/
+.logo {
+    width: 300px;
+    height: 150px;
+    line-height: 150px;
+    text-align: center;
+    border: 1px solid lightgray;
+    margin: 20px auto;
+}
+
+/************************* header의 hitmenu *************************/
+.hitmenu {
+    width: 100%;
+}
+.hitmenu ul {
+    width: 1000px;
+    overflow: hidden;
+    margin: 0 auto 3px;
+}
+.hitmenu ul li {
+    float: right;
+    border: 1px solid lightgray;
+}
+
+.hitmenu ul li a{
+    display: block;
+    padding: 10px 30px;
+}
+
+.hitmenu ul li:first-child{
+    border-radius: 0 10px 10px 0;
+}
+
+.hitmenu ul li:last-child{
+    border-radius: 10px 0 0 10px;
+}
+
+/************************* header의 lnb *************************/
+.lnb {
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    border-top: 1px dashed lightgray;
+    border-bottom: 1px dashed lightgray;
+}
+
+.lnb ul {
+    width: 1000px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.lnb ul li{
+    width: 100px;
+    float: left;
+    margin: 0 12px;
+    text-align: center;
+    font-weight: bold;
+}
+
+/************************* content *************************/
+#content {
+    width: 100%;
+}
+/************************* content의 섹션1 *************************/
+#content .section1 {
+    width: 1000px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.section1 .slide_banner {
+    float: left;
+    width: 700px;
+    height: 400px;
+    line-height: 400px;
+    text-align: center;
+    border: 1px solid lightgray;
+    box-sizing: border-box;
+}
+.section1 .side_banner {
+    float: left;
+    width: 300px;
+    height: 400px;
+    line-height: 400px;
+    text-align: center;
+    border: 1px solid lightgray;
+    box-sizing: border-box;
+}
+
+/************************* content의 섹션2 *************************/
+.section2 .hit_product {
+    width: 1000px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.section2 .hit_product ul {
+    width: 1000px;
+    height: 400px;
+    box-sizing: border-box;
+    overflow: hidden;
+    border: 1px solid lightgray;
+}
+
+.section2 .hit_product ul li {
+    margin: 0 7px;
+    float: left;
+    width: 235px;
+    height: 400px;
+    line-height: 400px;
+    text-align: center;
+    box-sizing: border-box;
+    border: 1px solid lightgray;
+}
+
+.section2 .md_product {
+    width: 1000px;
+    margin: 0 auto;
+    overflow: hidden;
+    padding-top: 10px;
+}
+
+.section2 .md_product ul {
+    width: 1000px;
+    height: 400px;
+    line-height: 400px;
+    box-sizing: border-box;
+    overflow: hidden;
+    border: 1px solid lightgray;
+}
+
+.section2 .md_product ul li {
+    margin: 0 7px;
+    float: left;
+    width: 235px;
+    height: 400px;
+    text-align: center;
+    box-sizing: border-box;
+    border: 1px solid lightgray;
+}
+
+/************************* footer *************************/
+footer {
+    width: 1000px;
+    margin: 0 auto;
+    overflow: hidden;
+    padding-top: 10px;
+}
+
+.office_logo {
+    float: left;
+    width: 200px;
+    height: 50px;
+    border: 1px solid lightgray;
+    box-sizing: border-box;
+    margin: 0 0 10px 0;
+}
+
+.offce_address{
+    float: left;
+    width: 500px;
+    height: 50px;
+    border: 1px solid lightgray;
+    box-sizing: border-box;
+}
+
+.shopping_info{
+    float: left;
+    width: 300px;
+    height: 50px;
+    border: 1px solid lightgray;
+    box-sizing: border-box;
+}
+.copyright {
+    clear: both;
+    width: 1000px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    background-color: black;
+    color: white;
+    margin: 10px auto;
+}

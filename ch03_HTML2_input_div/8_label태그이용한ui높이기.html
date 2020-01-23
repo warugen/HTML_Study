@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        b{color: red;}
+    </style>
+</head>
+<body>
+    <form action="#" method="get">
+        <fieldset>
+            <legend>필드 유효성 검사 및 UI 높이기</legend>
+            
+            <p><label for="lname">이름<b>*</b></label> 
+                <input type="text" name="name" id="lname" required="required" autofocus="autofocus"></p>
+            <p>
+                <label for="lpw">비밀번호<b>*</b></label>
+                <input type="password" name="pw" id="lpw" required="required">
+            </p>
+            <p>
+                <label for="ltel">전화번호</label>
+                <input type="tel" name="tel" id="ltel">
+            </p>
+            <p><center><input type="submit" value="전송">
+                <input type="reset" value="취소">
+            </center>
+            </p>
+        </fieldset>
+    </form>
+</body>
+</html>

@@ -1,0 +1,228 @@
+@font-face{
+    font-family: 'Quicksand-Variable';
+    src: url('../font/Quicksand-VariableFont_wght.ttf');
+}
+
+/**************페이지 초기화 *****************/
+*{
+    font-family: 'Quicksand-Variable';
+    margin: 0px;
+    padding: 0px;
+}
+
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+/******************** header_nav ********************/
+#header_nav{
+    width: 100%;
+    min-width: 1000px; /* 최소 width 지정 */
+    height: 25px;
+    line-height: 25px;
+    background-color: #2d1152;
+    font-size: .8em;
+    overflow: hidden;
+}
+#header_nav a {
+    color: white;
+}
+.gnb {
+    width: 700px;
+    margin-left: 3px;
+}
+
+.gnb ul li {
+    float: left;
+    margin-right: 25px;
+}
+
+.survivalFootball {
+    float: right;
+    font-size: .8em;
+}
+.survivalFootball img {
+    width: 15px;
+}
+
+/******************** header_nav ********************/
+#header_info {
+    width: 1000px;
+    margin: 0px auto;
+    overflow: hidden;
+}
+
+.logo {
+    float: left;
+    margin: 10px;
+}
+
+.search {
+    float: left;
+}
+.search input:nth-child(1) {
+    width: 400px;
+    font-size: 18px;
+    border: 1px solid #3488d9;
+    margin-top: 20px;
+    padding: 5px;
+}
+
+/*.search input:nth-child(2) {
+    background-image: url("../img/search_btn.png");
+}
+*/
+.btn_search {
+    background-image: url("../img/search_btn.png");
+    width: 124px;
+    height: 37px;
+    border: 0;
+    outline: none;
+    color: white;
+}
+
+.service ul {
+    margin: 0px;
+    float:right;
+}
+.service ul li{
+    float: left;
+    margin: 25px 15px 0 0;
+}
+
+.service ul li a{
+    color: #2d1152;
+    font-weight: bold;
+    font-size: .8em;
+    display: block;
+    padding: 5px 10px;
+}
+
+/******************** content ********************/
+#content {
+    width: 1000px;
+    margin: 0px auto;
+    overflow: hidden;
+}
+/******************** content main_menu ********************/
+#main_menu {
+    float: left;
+    width: 155px;
+}
+
+#main_menu li {
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+}
+
+#main_menu li a {
+    font-weight: bold;
+    display: block;
+}
+
+/******************** content main ********************/
+#main {
+    float: left;
+    width: 600px;
+}
+
+#main .main_1 {
+    height: 300px;
+    border: 1px solid lightgray;
+    box-sizing: border-box;
+}
+
+#main .main_2 {
+    height: 150px;
+    border: 1px solid lightgray;
+    box-sizing: border-box;
+    margin-top: 3px;
+    margin-bottom: 3px;
+}
+#main .main_3 {
+    background-color: #2d1152;
+    margin-bottom: 3px;
+}
+#main .main_3 ul {
+    height: 50px;
+    line-height: 50px;
+    overflow: hidden;
+}
+
+#main .main_3 ul li {
+    float: left;
+    width: 100px;
+    text-align: center;
+}
+
+#main .main_3 ul li a {
+    color: white;
+    font-size: .8em;
+    display: block;
+    
+}
+#main .main_4, .main_5, .main_6, .main_7 {
+    height: 100px;
+    border: 1px solid lightgray;
+    box-sizing: border-box;
+    margin-bottom: 3px;
+}
+
+/******************** content main_banner ********************/
+#main_banner {
+    float: left;
+    width: 230px;
+    margin-left: 3px;
+}
+
+#main_banner .banner1, .banner2{
+    height: 100px;
+    border: 1px solid lightgray;
+    box-sizing: border-box;
+    margin-bottom: 3px;
+}
+
+#main_banner .banner3, .banner4 {
+    height: 150px;
+    border: 1px solid lightgray;
+    box-sizing: border-box;
+    margin-bottom: 3px;
+}
+
+#main_banner .banner5 {
+    height: 200px;
+    border: 1px solid lightgray;
+    box-sizing: border-box;
+    margin-bottom: 3px;
+}
+
+
+/******************** footer ********************/
+footer {
+    width: 1000px;
+    height: 100px;
+    line-height: 100px;
+    margin: 0px auto;
+    padding-top: 10px;
+}
+footer ul{
+    overflow: hidden;
+}
+
+footer ul li {
+    float: left;
+}
+
+footer ul li:first-child img {
+    display: block;
+    margin: 20px 0 0 200px;
+}
+
+footer ul li:last-child img {
+    display: block;
+    margin: 0 0 0 50px;
+}

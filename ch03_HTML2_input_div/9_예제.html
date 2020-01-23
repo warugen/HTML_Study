@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        function chk() {
+            if(frm.mail.value.lastIndexOf('@') > frm.mail.value.lastIndexOf('.')) {
+                alert('올바른 이메일 형식을 입력해주세요.');
+                frm.mail.focus();
+                return false;
+            }
+            /*
+            var str = frm.mail.value;
+            alert(str);
+            var first = str.lastIndexOf('@');
+            alert(first);
+            var search = str.indexOf('.',str.lastIndexOf('@'));
+            alert(search);
+            if(search < 0) {
+                alert('올바른 이메일 형식을 입력해 주세요.');
+            } else {
+                alert(str);
+            } */
+            return true;
+        }
+    </script>
+</head>
+<body>
+    <form action="#" method="GET" onsubmit="return chk()" name="frm" width=300>
+        <fieldset>
+            <legend><h2>필드에 입력형식 힌트 주는 사용자 인터페이스</h2></legend>
+            <ul type="disc">
+                <li><label for="ltel">연락처 : </label>
+                    <input type="tel" name="tel" id="ltel" 
+                    pattern="\d[0-9]{2,3}-[0-9]{3,4}-[0-9]{4}" placeholder="000-0000-0000" required="required">
+                </li>
+                <li><label for="lmail">연락처 : </label>
+                    <input type="email" name="mail" id="lmail"
+                    placeholder="id@domain.com" required="required">
+                </li>
+            </ul>
+            <center>
+                <input type="submit" value="입력완료">
+                <input type="reset" value="입력취소">
+            </center>
+        </fieldset>
+    </form>
+</body>
+</html>

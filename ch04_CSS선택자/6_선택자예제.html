@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        div {
+            width: 380px;
+            text-align: center;
+            margin: 0 auto;
+            border: 1px solid gray;
+        }
+        #header { 
+            font-size: large;
+            color: orange;
+        }
+        #section img[src$=bmp] {
+            border: 2px solid blue;
+        }
+        #section img[src$=gif] {
+            border: 2px solid red;
+        }
+        #section img[src$=jpg] {
+            border: 2px solid yellow;
+        }
+        #section img[src$=png] {
+            border: 2px solid black;
+        }
+        #footer {
+            color: green;
+            font-size: large;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div id="header">
+        <h1>자바 스크립트 책들</h1>
+    </div>
+    <div id="section">
+        <img src="./0115_book/book.bmp" alt="book1" >
+        <img src="./0115_book/book.gif" alt="book2" >
+        <img src="./0115_book/book.jpg" alt="book3" >
+        <img src="./0115_book/book.png" alt="book4" >
+    </div>
+    <div id="footer">
+        <p>서울시 종로구 수표로 105 육의전 빌딩 8,9층</p>
+    </div>
+</body>
+</html>

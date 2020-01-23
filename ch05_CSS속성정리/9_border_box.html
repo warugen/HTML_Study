@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+        div {
+            width: 100px;
+            height: 100px;
+            border: 3px solid black;
+        }
+        div:nth-child(1){
+            border: 0;
+            background-color: lightyellow;
+        }
+        div:nth-child(2){
+            /* width안에 border가 들어감 
+               width사이즈가 100-(3*2)=94px 가 된다.
+            */
+            box-sizing: border-box; /* width안에 border가 들어감 */
+        }
+    </style>
+</head>
+<body>
+    <!-- 스마트폰 레이아웃에 자주 이용된다 -->
+    <div>1111</div>
+    <div>2</div>
+    <div>3</div>
+    <div>4</div>
+</body>
+</html>

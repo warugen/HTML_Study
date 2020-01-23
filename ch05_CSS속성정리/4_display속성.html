@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        div{
+            width: 100px;
+            height: 100px;
+            border: 1px solid #cccccc;
+            font-weight: bold;
+            text-align: center;
+        }
+        div:nth-child(1){
+            background-color: red;
+        }
+        div:nth-child(2){
+            background-color: green;
+        }
+        div:nth-child(3){
+            background-color: blue;
+            display: inline; /* 라인형 태그로 변경 -> heigth가 적용안된다. margin도 위,아래는 적용안됨*/
+            margin: 10px;
+        }
+        div:nth-child(4){
+            background-color: lightgoldenrodyellow;
+            display: inline;
+
+        }
+        div:nth-child(5){
+            background-color: black;
+            display: none; /* 안보이게한다(공간도 안보임)*/
+        }
+        div:nth-child(6){
+            background-color: #cccccc;
+            display: inline-block; /* 라인형태그로 변경하지만 블럭형으로 들어간다. */
+        }
+        div:nth-child(7){
+            background-color: lightseagreen;
+            display: inline-block;
+        }
+        div:nth-child(8){
+            background-color: lightpink;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div>content1</div>
+    <div>content2</div>
+    <div>content3</div>
+    <div>content4</div>
+    <div>content5</div>
+    <div>content6</div>
+    <div>content7</div>
+    <div>content8</div>
+</body>
+</html>

@@ -1,0 +1,188 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        /*
+            # : id선택할때
+            . : class 선택할때
+            padding 순서 : 상, 우, 하, 좌
+            margin  순서 : 상, 우, 하, 좌
+            radius  순서 : 왼윗쪽, 오른윗쪽, 오른아랫쪽, 왼아랫쪽
+            태그명:적용할함수이름(?) : 반응,선택,구조 선택자
+        */
+        #header, #content, #footer {
+            width: 1000;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+        /*
+        #header {
+            overflow: hidden;
+        }*/
+        #header div{
+            float: left;
+        }
+        #header .left{
+            width: 150px;
+            height: 150px;
+            border: 1px solid gray;
+            background-color: lightgray;
+            border-radius: 20px 0 20px 0;
+        }
+        #header .center{
+            width: 694px;
+            height: 150px;
+            border: 1px solid gray;
+            background-color: lightgray;
+            border-radius: 0px 0px 20px 20px;
+        }
+        #header .right{
+            width: 150px;
+            height: 150px;
+            border: 1px solid gray;
+            background-color: lightgray;
+            border-radius: 0px 20px 0px 20px;
+        }
+        /*
+        #content{
+            overflow: hidden;
+        }*/
+        #content div{
+            float: left;
+        }
+        #content .left{
+            width: 150px;
+            height: 300px;
+            border: 1px solid gray;
+            background-color: lightgray;
+            border-radius: 0px 20px 20px 0px;
+        }
+        #content .center{
+            width: 694px;
+            height: 300px;
+            border: 1px solid gray;
+            background-color: lightgray;
+            border-radius: 20px 20px 20px 20px;
+        }
+        #content .right{
+            width: 150px;
+            height: 300px;
+            border: 1px solid gray;
+            background-color: lightgray;
+            border-radius: 20px 0px 0px 20px;
+        }
+        /*
+        #footer {
+            overflow: hidden;
+        }*/
+        #footer div {
+            float: left;
+        }
+        #footer .left{
+            width: 150px;
+            height: 150px;
+            border: 1px solid gray;
+            background-color: lightgray;
+            border-radius: 0px 20px 0px 20px;
+        }
+        #footer .center{
+            width: 694px;
+            height: 150px;
+            border: 1px solid gray;
+            background-color: lightgray;
+            border-radius: 20px 20px 0px 0px;
+        }
+        #footer .right{
+            width: 150px;
+            height: 150px;
+            border: 1px solid gray;
+            background-color: lightgray;
+            border-radius: 20px 0px 20px 0px;
+        }
+        #content .center #nav ul{
+            overflow: hidden;
+        }
+        #content .center #nav li{
+            float: left;
+            list-style: none;
+            padding: 20px 20px 50px 20px;
+        }
+        #content .center #nav ul li a {
+            text-decoration: none;
+            color: black;
+            font-size: 20px;;
+            font-weight: bold;
+        }
+        #content .center h1{
+            clear: both;
+            text-align: center;
+            margin: 20px 20px 50px 20px;
+        }
+        #content .center p {
+            text-align: center;
+        }
+        #content .right #list ol li:nth-child(9)~li{
+            color: purple;
+        }
+        /*
+        #content .right #list ol li:nth-child(10){
+            color: purple;
+        }
+        
+        #content .right #list ol li:nth-child(11){
+            color: purple;
+        }
+        #content .right #list ol li:nth-child(12){
+            color: purple;
+        }*/
+    </style>
+</head>
+<body>
+    <div id="header">
+        <div class="left"></div>
+        <div class="center"></div>
+        <div class="right"></div>
+    </div>
+    <div id="content">
+        <div class="left"></div>
+        <div class="center">
+            <div id="nav">
+                <ul>
+                    <li><a href="#menu1">menu1</a></li>
+                    <li><a href="#menu2">menu2</a></li>
+                    <li><a href="#menu3">menu3</a></li>
+                </ul>
+            </div>
+            <h1>자바 개발자 양성과정</h1>
+            <p>본 과정은 좋다. 아주 좋다. 친구들이 좋다.</p>
+        </div>
+        <div class="right">
+            <div id="list">
+                <ol>
+                    <li>태그</li>
+                    <li>전체(*)</li>
+                    <li>id,class</li>
+                    <li>속성</li>
+                    <li>후손,자손(>)</li>
+                    <li>동위</li>
+                    <li>반응</li>
+                    <li>상태</li>
+                    <li>구조</li>
+                    <li>문자</li>
+                    <li>링크</li>
+                    <li>부정</li>
+                </ol>
+            </div>
+        </div>
+    </div>
+    <div id="footer">
+        <div class="left"></div>
+        <div class="center"></div>
+        <div class="right"></div>
+    </div>
+</body>
+</html>
